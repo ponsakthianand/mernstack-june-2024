@@ -1,0 +1,5 @@
+utf8
+ If a <FileHandle> is not closed using the filehandle.close() method, it will try to automatically close the file descriptor and emit a process warning, helping to prevent memory leaks. Please do not rely on this behavior because it can be unreliable and the file may not be closed. Instead, always explicitly close <FileHandle>s. Node.js may change this behavior in the future.
+
+
+How to import JavaScript files in NodeJS using file paths from project root? (instead of relative file paths)

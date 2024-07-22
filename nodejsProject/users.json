@@ -1,0 +1,68 @@
+{
+  "user1": {
+    "name": "mahesh",
+    "password": "password1",
+    "profession": "teacher",
+    "id": 1
+  },
+  "user2": {
+    "name": "suresh",
+    "password": "password2",
+    "profession": "librarian",
+    "id": 2
+  },
+  "user3": {
+    "name": "ramesh",
+    "password": "password3",
+    "profession": "clerk",
+    "id": 3
+  },
+  "user4": {
+    "name": "Kumar",
+    "password": "password3",
+    "profession": "clerk",
+    "id": 5
+  },
+  "user5": {
+    "name": "Kumar",
+    "password": "password3",
+    "profession": "clerk",
+    "id": 5
+  },
+  "user6": {
+    "name": "rajesh",
+    "password": "3213123",
+    "profession": "goorka",
+    "id": 5
+  },
+  "user7": {
+    "name": "ajith",
+    "password": "3213123",
+    "profession": "IT engineer",
+    "id": 5
+  },
+  "ajith": {
+    "name": "ajith",
+    "password": "3213123",
+    "profession": "IT engineer",
+    "id": 5
+  },
+  "user9": {
+    "name": "Malathi",
+    "password": "3213123",
+    "profession": "IT engineer",
+    "id": 5
+  },
+  "user10": {
+    "name": "Vijay",
+    "password": "3213123",
+    "profession": "IT engineer",
+    "id": 10
+  },
+  "user11": {
+    "name": "Vijay",
+    "password": "3213123",
+    "profession": "IT engineer",
+    "id": 11
+  }
+}
