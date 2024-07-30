@@ -1,9 +1,10 @@
-import logo from './logo.svg';
-import './App.css';
+import './App.scss';
 import About from './aboutComponent/about'
 import Contact from './contacrtComponent/contact';
 import Home from './homeComponent/home';
+import Layout from './layout';
 import { useCallback, useEffect, useMemo, useState, useRef } from 'react';
+import { BrowserRouter, Routes, Route, Link, Outlet } from 'react-router-dom';
 
 function App() {
   const [selectedMenu, setSeletedMenu] = useState('');
@@ -38,26 +39,16 @@ function App() {
     }
   }
 
-
-  console.log('selectedMenu', selectedMenu);
-
   return (
-    <div className="App">
-      {memoFunction}
-      <header>This is Header
-
-        <div style={{ cursor: "pointer" }} ref={refCheck} onClick={(event) => callFunction(event)}>Home</div>
-        <div style={{ cursor: "pointer" }} onClick={() => setSeletedMenu('about')}>About</div>
-        <div style={{ cursor: "pointer" }} onClick={() => setSeletedMenu('contact')}>Contact</div>
-      </header>
-      <div className='content' style={{ "backgroundColor": "#cccc" }}>
-        {/* {`${mainContent} from India ${mainContent} new`}<br />
-        {mainContent + ' from India ' + mainContent + ' New'} */}
-
-        {loadPage(selectedMenu)}
-      </div>
-      <footer>This is Footer</footer>
-    </div>
+    <Routes>
+      <Route path="/" element={<Layout />}>
+        <Route index element={<Home />}></Route>
+        <Route path="about" element={<About />}>
+          <Route path='contact' element={<Contact />}></Route>
+        </Route>
+        <Route path='contact' element={<Contact />}></Route>
+      </Route>
+    </Routes>
   );
 }
 
