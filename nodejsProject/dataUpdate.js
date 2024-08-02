@@ -1,9 +1,11 @@
 //Using Express
 const express = require('express');
 const mongoose = require('mongoose');
+var cors = require('cors')
 
 //create an instance of express
 const app = express();
+app.use(cors())
 app.use(express.json())
 const { Schema } = mongoose;
 
